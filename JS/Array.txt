@@ -1,0 +1,9 @@
+const numbers = [1,2,3];
+const doublenum = numbers.map((num)=>{
+  return num*2;
+})
+console.log(doublenum);
+Output:-
+ 
+
+[2, 4, 6]

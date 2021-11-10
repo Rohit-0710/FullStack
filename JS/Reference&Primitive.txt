@@ -1,0 +1,19 @@
+Objects and Arrays are referenced type
+So const person =
+{
+name: 'Max'
+};
+
+const secondPerson = person;
+person.name ='Manu'
+ It will Print Manu even though we have called it later because it is not copying the value it is referencing to it's address.
+
+
+Now to copy it's value we use 
+ 
+const secondPerson = {
+...person
+};
+person.name = 'Manu';
+It will now print Max
+ 

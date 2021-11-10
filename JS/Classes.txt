@@ -1,0 +1,9 @@
+New Method of classes using ES6/Babel
+class Person{
+  age =28;
+printage = () => {
+  console.log(this.age);
+}
+}
+const person = new Person();
+person.printage();

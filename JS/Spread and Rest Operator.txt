@@ -1,0 +1,31 @@
+const number = [1,2,3]
+const numbers = [...number, 4]
+console.log(numbers);
+
+Output:- [1, 2, 3, 4]
+
+const number = [1,2,3]
+const numbers = [number, 4]
+console.log(numbers);
+Output:- [[1, 2, 3], 4]
+
+Spread Operator :- const Person ={
+  name :"Rohit"
+};
+
+const newPerson ={
+  ...Person,
+  age :22
+}
+console.log(newPerson);
+Output:-[object Object] {
+  age: 22,
+  name: "Rohit"
+}
+
+Rest Operator :-
+const filter = (...args) => {
+  return args.filter(el=>el===1,2)
+}
+console.log(filter(1,2,3,4));
+Output:-[1]
